@@ -8,10 +8,16 @@ $font-stack: sans-serif;
 $bigBorder: 4px solid CornflowerBlue;
 $smallBorder: 2px solid $dark-blue;
 
+//Mixins
+@mixin change($degrees){
+    transform: rotate($degrees);
+}
+
 body{
     font-family: $font-stack;
 }
 h1{
+    @include change(1deg);
     color: $dark-blue;
     border: $bigBorder;
     padding: 10px;
@@ -20,9 +26,11 @@ h2{
     margin: 0px;
  }
 div.container{
+    @include change(-1deg);
     color: $light-blue;
     border: $smallBorder;
     background-color: $dark-blue;
     padding: 10px;
+    margin-top: 10px;
 }
 
