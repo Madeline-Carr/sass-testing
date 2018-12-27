@@ -4,10 +4,11 @@
 
 body{
     font-family: $font-stack;
+    background-color: #333;
 }
 h1{
     @include change(1deg);
-    color: $dark-blue;
+    color: $light-blue;
     border: $bigBorder;
     padding: 10px;
 }
@@ -21,5 +22,16 @@ div.container{
     background-color: $dark-blue;
     padding: 10px;
     margin-top: 10px;
+    h3{
+        color: white;
+    }
 }
 
+div.straight{
+    color: $dark-blue;
+    border: $smallBorder;
+    background-color: $light-blue;
+    padding: 10px;
+    margin-top: 10px;
+
+}
